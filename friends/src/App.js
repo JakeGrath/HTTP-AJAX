@@ -59,12 +59,11 @@ class App extends React.Component {
 
   updateFriend = e => {
     const target = (e.target.value).split(',')
-    const targetId = target[0]
     e.preventDefault();
     console.log(`Updating...${target[0]}`)
     axios
-  .put(`http://localhost:5000/friends/${targetId}`, {
-    id: targetId,
+  .put(`http://localhost:5000/friends/${parseInt(target[0])}`, {
+    id: parseInt(target[0]),
     name: ((this.state.name === '') ? target[1] : this.state.name),
     image: ((this.state.image === '') ? target[2] : this.state.image),
     birthday: ((this.state.birthday === '') ? target[3] : this.state.birthday),
