@@ -1,7 +1,7 @@
 import React from 'react';
 import './Friends.css'
 
-const FriendForm = ({name, image, birthday, species, changeHandler, submit}) => {
+const FriendForm = ({name, image, birthday, species, changeHandler, submit }) => {
     return (
         <div className='header-div'>
             <h1>Add a Friend!</h1>
@@ -22,7 +22,7 @@ const FriendForm = ({name, image, birthday, species, changeHandler, submit}) => 
             type='text'
             value={image}
             name='image'
-            placeholder='Image Url'
+            placeholder='image'
             onChange={changeHandler}
             />
             </h2>

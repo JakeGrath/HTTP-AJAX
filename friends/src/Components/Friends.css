@@ -69,6 +69,14 @@ h1 {
     background: rgba(244,244,244,.8);
 }
 
+.update {
+    background: rgba(100,100,244,.8);
+}
+
+.update:hover{
+    background: rgba(100,100,244,1);
+}
+
 .delete {
     background: rgba(244,100,100,.8);
 }
